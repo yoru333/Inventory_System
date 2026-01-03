@@ -1,0 +1,64 @@
+body{
+ max-width: 820px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+}
+
+body {
+  background-image: url("/static/thh.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255,255,255,0.7); /* 半透明白色 */
+  z-index: -1;
+}
+
+h2 {
+    color: #016633;
+    font-size: 48px;               /* 字要夠大 */              
+  font-weight: bold;            /* 粗體讓它有份量 */
+  text-align: center;           /* 置中 */
+  margin: 30px 0;               /* 上下留白 */
+  letter-spacing: 2px;          /* 字距稍微拉開 */
+  text-shadow: 1px 1px 2px #ccc; /* 微陰影，增加立體感 */
+}
+
+button{
+background-color: #4a90e2;    /* 背景是藍色 */
+  color: white;                 /* 字體是白色 */
+  border: none;                 /* 移除外框線 */
+  margin-top: 5px;
+  padding: 8px 10px;           /* 內距：上下12px，左右20px */
+  border-radius: 8px;           /* 圓角按鈕 */
+  font-size: 16px;              /* 字體大小 */
+  cursor: pointer;              /* 滑鼠移上去會變手指 */
+  transition: background-color 0.3s ease;
+}
+
+form {
+  max-width: 450px;          /* 限制表單寬度 */
+  margin: 20px auto;         /* 置中並且上下有間距 */
+  padding: 20px;
+  background: #f9f9f9;       /* 淺灰背景 */
+  border-radius: 10px;       /* 圓角 */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 柔和陰影 */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form input[type="text"]{
+height: 20px;
+
+}
+form input[type="password"]{
+height: 20px;
+
+}

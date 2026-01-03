@@ -1,0 +1,63 @@
+body {
+  background-image: url("/static/thh.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255,255,255,0.7); /* 半透明白色 */
+  z-index: -1;
+}
+
+
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td{
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th{
+    background-color: #4CAF50;
+    color: white;
+}
+
+h1 {
+    color: #28a745;
+    font-size: 40px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+
+a {
+  text-decoration: none;      /* 移除底線 */
+  color: #0aa0f7;             /* 改成藍色 */
+  font-weight: bold;          /* 粗體 */
+  transition: color 0.3s;     /* 滑鼠移上去時顏色平滑變化 */
+}
+
+p{
+    text-align: center;
+}
+
+a:hover {
+  color: #6207f5;             /* 滑鼠移上去變深藍色 */
+  text-decoration: underline; /* 滑鼠移上去加底線 */
+}

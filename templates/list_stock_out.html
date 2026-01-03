@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>出貨紀錄列表</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='list_stock_out.css')}}">
+</head>
+<body>
+    <h1>出貨紀錄</h1>
+    <table border="1">
+        <tr>
+            <th>出貨ID</th>
+            <th>商品ID</th>
+            <th>出貨數量</th>
+            <th>出貨日期</th>
+        </tr>
+        {% for out in stock_outs %}
+        <tr>
+            <td>{{ out[0] }}</td>
+            <td>{{ out[1] }}</td>
+            <td>{{ out[2] }}</td>
+            <td>{{ out[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <p><a href="/">回首頁</a></p>
+</body>
+</html>

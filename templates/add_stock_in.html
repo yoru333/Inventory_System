@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>進貨紀錄</title>
+    <!-- 加入 Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='add_stock_in.css')}}">
+</head>
+<body class="container mt-4">
+    <h1>新增進貨紀錄</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <form method="POST">
+        <label>商品 ID：
+            <select name="product_id" required class="form-select mb-3">
+                {% for product in products %}
+                    <option value="{{ product[0] }}">{{ product[0] }} - {{ product[1] }}</option>
+                {% endfor %}
+            </select>
+        </label>
+
+        <label>進貨數量：
+            <input type="number" name="quantity" min="1" required class="form-control mb-3">
+        </label>
+
+        <button type="submit">提交進貨</button>
+    </form>
+
+    <p><a href="/" >回首頁</a></p>
+
+    <!-- Bootstrap 5 JS 和 Popper，用來支援 alert 的關閉按鈕功能 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

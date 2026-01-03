@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>更新進貨紀錄</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='update_stock_in.css')}}">
+</head>
+<body>
+    <h1>更新進貨數量</h1>
+    <form method="POST">
+        <label for="in_id">進貨紀錄 ID：</label>
+        <input type="number" name="in_id" id="in_id" required><br><br>
+
+        <label for="quantity">新進貨數量：</label>
+        <input type="number" name="quantity" id="quantity" required><br><br>
+
+        <input type="submit" value="更新進貨數量">
+    </form>
+
+    <p><a href="/">回首頁</a></p>
+</body>
+</html>

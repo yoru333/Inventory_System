@@ -1,0 +1,80 @@
+h1 {
+     max-width: 350px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    color: rgb(249, 250, 250);
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgb(2, 78, 43);
+}
+
+body {
+  background-image: url("/static/thh.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;                            /* 固定在螢幕上，不會跟著滾動 */
+  top: 0; left: 0;                             /* 固定在螢幕上，不會跟著滾動 */
+  width: 100%; height: 100%;
+  background-color: rgba(255,255,255,0.7); /* 半透明白色 */
+  z-index: -1;                                /* 放在最底層，不會遮住內容 */
+}
+
+
+form {
+  max-width: 450px;          /* 限制表單寬度 */
+  margin: 20px auto;         /* 置中並且上下有間距 */
+  padding: 20px;
+  background: #f9f9f9;       /* 淺灰背景 */
+  border-radius: 10px;       /* 圓角 */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 柔和陰影 */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+a {
+  display: block;
+  text-decoration: none;      /* 移除底線 */
+  color: #fafbfc;             /* 改成藍色 */
+  font-weight: bold;          /* 粗體 */
+  transition: color 0.3s;     /* 滑鼠移上去時顏色平滑變化 */
+  background-color: #0aa0f7;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 55px;
+  height: 26px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+a:hover {
+  color: #6207f5;             /* 滑鼠移上去變深藍色 */
+  text-decoration: underline; /* 滑鼠移上去加底線 */
+}
+
+form input[type="submit"]{
+background-color: #4a90e2;    /* 背景是藍色 */
+  color: white;                 /* 字體是白色 */
+  border: none;                 /* 移除外框線 */
+  padding: 8px 15px;           /* 內距：上下12px，左右20px */
+  border-radius: 8px;           /* 圓角按鈕 */
+  font-size: 16px;              /* 字體大小 */
+  cursor: pointer;              /* 滑鼠移上去會變手指 */
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover{
+background-color: #6207f5;
+
+}
+
+form input[type="number"]{
+  height: 20px;
+}

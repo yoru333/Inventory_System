@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>刪除出貨紀錄</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='delete_stock_out.css')}}">
+</head>
+<body>
+    <h1>刪除出貨紀錄</h1>
+
+    <form method="POST">
+        <label for="out_id">出貨紀錄 ID：</label>
+        <input type="number" name="out_id" required><br><br>
+        <input type="submit" value="刪除">
+    </form>
+
+    <hr>
+
+    <h2>目前出貨紀錄</h2>
+    <table border="1">
+        <tr>
+            <th>出貨ID</th>
+            <th>商品ID</th>
+            <th>數量</th>
+            <th>出貨日期</th>
+        </tr>
+        {% for record in records %}
+        <tr>
+            <td>{{ record[0] }}</td>
+            <td>{{ record[1] }}</td>
+            <td>{{ record[2] }}</td>
+            <td>{{ record[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <p><a href="/">回首頁</a></p>
+</body>
+</html>

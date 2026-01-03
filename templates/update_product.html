@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>更新商品庫存</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='update_product.css')}}">
+</head>
+<body>
+    <h1>更新商品庫存</h1>
+    <form method="POST">
+        <label>商品 ID: <input type="number" name="product_id" required></label><br><br>
+        <label>新庫存數量: <input type="number" name="new_stock" required></label><br><br>
+        <button type="submit">更新庫存</button>
+    </form>
+    <p><a href="/">返回首頁</a></p>
+</body>
+</html>

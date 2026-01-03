@@ -1,0 +1,137 @@
+h1{
+  max-width: 350px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    color: rgb(249, 250, 250);
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgb(2, 78, 43);
+    
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+form {
+  max-width: 450px;          /* 限制表單寬度 */
+  margin: 20px auto;         /* 置中並且上下有間距 */
+  padding: 20px;
+  background: #f9f9f9;       /* 淺灰背景 */
+  border-radius: 10px;       /* 圓角 */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 柔和陰影 */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    border-radius: 5px;
+    overflow: hidden;
+    color: rgb(3, 122, 67);
+    font-size: 25px;
+    margin: 0;
+    padding-top: 15px;
+    text-align: center;
+}
+
+ul {
+  list-style: none;            /* 移除預設點點 */
+  padding: 0;
+  text-align: center;          /* 讓 li 的內容置中 */
+}
+
+
+
+.product-list span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.product-id {
+  font-weight: bold;
+  color: #036423;
+  font-size: 20px;
+  
+}
+
+.product-stock {
+  color: #f77676;  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+
+form input[type="number"]{
+ width: 70%;                   /* 撐滿整個區塊寬度 */
+  padding: 10px 14px;            /* 內距：上下10px，左右14px */
+  margin-bottom: 20px;           /* 和下個欄位留出距離 */
+  border: 1.5px solid #ccc;      /* 淺灰邊框，看起來不突兀 */
+  border-radius: 6px;            /* 圓角，讓框框不死板 */
+  font-size: 16px;               /* 文字大小適中，好輸入 */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button{
+background-color: #4a90e2;    /* 背景是藍色 */
+  color: white;                 /* 字體是白色 */
+  border: none;                 /* 移除外框線 */
+  padding: 12px 20px;           /* 內距：上下12px，左右20px */
+  border-radius: 8px;           /* 圓角按鈕 */
+  font-size: 16px;              /* 字體大小 */
+  cursor: pointer;              /* 滑鼠移上去會變手指 */
+  transition: background-color 0.3s ease;
+
+}
+
+body {
+  background-image: url("/static/thh.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255,255,255,0.7); /* 半透明白色 */
+  z-index: -1;
+}
+
+button:hover{
+    background-color: #4002a5;
+}
+
+a {
+  display: block;       /* 變成區塊元素 */
+  width: 100px;         /* 設定寬度 */
+  height:26px;
+  margin: 20px auto;    /* 上下間距20px，左右置中 */
+  text-align: center;   /* 文字置中 */
+  text-decoration: none;
+  color: #feffff;
+  background-color: #03aaf8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+a:hover{
+    color: #390096;             /* 滑鼠移上去變深藍色 */
+    text-decoration: underline;
+
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: hsla(180, 91%, 71%, 0.4);
+  border: hsla(143, 93%, 63%, 0.4), solid;
+  
+}
+
+

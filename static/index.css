@@ -1,0 +1,97 @@
+body{
+ max-width: 860px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+}
+
+body {
+  background-image: url("/static/thh.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255,255,255,0.7); /* 半透明白色 */
+  z-index: -1;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td{
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th{
+    background-color: #4CAF50;
+    color: white;
+}
+
+h1 {
+    color: #016633;
+    font-size: 48px;               /* 字要夠大 */              
+  font-weight: bold;            /* 粗體讓它有份量 */
+  text-align: center;           /* 置中 */
+  margin: 30px 0;               /* 上下留白 */
+  letter-spacing: 2px;          /* 字距稍微拉開 */
+  text-shadow: 1px 1px 2px #ccc; /* 微陰影，增加立體感 */
+}
+
+.title-bar {
+    display: flex;
+    justify-content: center
+}
+.title-bar h2{
+    border-radius: 5px;
+    overflow: hidden;
+    color: rgb(2, 78, 43);
+    font-size: 25px;
+    margin: 0;
+    padding-top: 15px;
+
+}
+
+.logout{
+  display: block;       /* 變成區塊元素 */
+  width: 100px;         /* 設定寬度 */
+  height: 26px;
+  margin: 20px auto;    /* 上下間距20px，左右置中 */
+  text-align: center;   /* 文字置中 */
+  text-decoration: none;
+  color: #f7f8f8;
+  background-color: #03aaf8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+a:not(.logout) {
+     
+    background-color: #d4edda;
+    border-radius: 4px;
+    overflow: hidden;
+  text-decoration: none;      /* 移除底線 */
+  color: #017c1e;             /* 改成藍色 */
+  font-weight: bold;          /* 粗體 */
+  transition: color 0.3s;     /* 滑鼠移上去時顏色平滑變化 */
+}
+
+a:not(.logout):hover {
+  color: #6207f5;             /* 滑鼠移上去變深藍色 */
+  text-decoration: underline; /* 滑鼠移上去加底線 */
+}
+

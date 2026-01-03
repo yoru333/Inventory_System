@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>更新出貨紀錄</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='update_stock_out.css')}}">
+</head>
+<body>
+    <h1>更新出貨紀錄</h1>
+    <form method="POST">
+        <label for="out_id">出貨紀錄 ID：</label>
+        <input type="number" name="out_id" required><br><br>
+
+        <label for="quantity">新的出貨數量：</label>
+        <input type="number" name="quantity" required><br><br>
+
+        <input type="submit" value="更新">
+    </form>
+
+    <p><a href="/">回首頁</a></p>
+</body>
+</html>

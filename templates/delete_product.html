@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>刪除商品</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='delete_product.css')}}"
+</head>
+<body>
+    <h1>刪除商品</h1>
+    <form method="POST">
+        <label>商品 ID:
+            <input type="number" name="product_id" required>
+        </label><br><br>
+        <button type="submit" onclick="return confirm('確定要刪除嗎？')">刪除商品</button>
+    </form>
+
+    <h2>目前商品清單</h2>
+    <ul class="product-list">
+        {% for product in products %}
+        <li>
+            <span class="product-id">ID:{{ product[0] }} 名稱:{{ product[1] }}</span>
+            <span class="product-stock">庫存:{{ product[4] }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+    
+    <p><a href="/">回首頁</a></p>
+</body>
+</html>

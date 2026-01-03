@@ -1,0 +1,96 @@
+h1 {
+    color: #28a745;
+    font-size: 40px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+body {
+  background-image: url("/static/thh.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255,255,255,0.7); /* 半透明白色 */
+  z-index: -1;
+}
+
+form {
+  max-width: 450px;          /* 限制表單寬度 */
+  margin: 20px auto;         /* 置中並且上下有間距 */
+  padding: 20px;
+  background: #f9f9f9;       /* 淺灰背景 */
+  border-radius: 10px;       /* 圓角 */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 柔和陰影 */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    text-align: center;
+    color: rgb(4, 173, 74);
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td{
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th{
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+form input[type="submit"]{
+background-color: #4a90e2;    /* 背景是藍色 */
+  color: white;                 /* 字體是白色 */
+  border: none;                 /* 移除外框線 */
+  padding: 8px 15px;           /* 內距：上下12px，左右20px */
+  border-radius: 8px;           /* 圓角按鈕 */
+  font-size: 16px;              /* 字體大小 */
+  cursor: pointer;              /* 滑鼠移上去會變手指 */
+  transition: background-color 0.3s ease;
+}
+form input[type="submit"]:hover{
+background-color: #032288;
+
+}
+
+a {
+  display: block;
+  text-decoration: none;      /* 移除底線 */
+  color: #f9fbfc;             /* 改成藍色 */
+  font-weight: bold;          /* 粗體 */
+  transition: color 0.3s;     /* 滑鼠移上去時顏色平滑變化 */
+  background-color: #0aa0f7;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 55px;
+  height: 26px;
+  text-align: center;
+}
+
+
+
+a:hover {
+  color: #6207f5;             /* 滑鼠移上去變深藍色 */
+  text-decoration: underline; /* 滑鼠移上去加底線 */
+}
