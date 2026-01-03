@@ -10,11 +10,11 @@ from inventory_crud import list_products, add_product, update_product_stock, del
 import bcrypt
 #Flask（建立網站用）與 render_template（用來載入 HTML 模板檔案）
 connection = mysql.connector.connect(
-    host="localhost",
+    host="bmqyzwntbftmo6pawady-mysql.services.clever-cloud.com",
     port="3306",
-    user="root",
-    password="a25209293",
-    database="inventory_db")
+    user="ujljgigajyafh9zb",
+    password="esXpq0EprRpPlRfx8hkD",
+    database="bmqyzwntbftmo6pawady")
 
 
 app = Flask(__name__)
