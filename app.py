@@ -11,7 +11,7 @@ import bcrypt
 #Flask（建立網站用）與 render_template（用來載入 HTML 模板檔案）
 connection = mysql.connector.connect(
     host="bmqyzwntbftmo6pawady-mysql.services.clever-cloud.com",
-    port="3306",
+    port=3306,
     user="ujljgigajyafh9zb",
     password="esXpq0EprRpPlRfx8hkD",
     database="bmqyzwntbftmo6pawady")
