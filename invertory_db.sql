@@ -1,5 +1,4 @@
-Create database inventory_db;
-USE inventory_db;
+USE bmqyzwntbftmo6pawady;
 -- 商品表
 Create table products(
 product_id INT PRIMARY KEY AUTO_INCREMENT,
